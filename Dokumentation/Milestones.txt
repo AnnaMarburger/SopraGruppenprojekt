@@ -1,0 +1,31 @@
+Milestones für Server:
+
+Server zum starten kriegen
+Dummy verbindungen herstellen (Ohne funktionialität)
+Heliporter Nachricht einbauen und testen
+
+Milestones für Client:
+
+Startscreen (Auswahl für zuschauen und teilnehmen)
+IPConfig Screen für Auswahl
+Verbindung zum Server
+PreGame (Hausauswahl, Szenario darstellen)
+"Passive" Phasen empfangen (alles bis auf chracter Zug Phase) und darstellen
+"aktive" Phasen modellieren
+	-Character bewegen
+	-Normale Aktionen
+	-Spezielle Aktionen
+Nachrichten Schicken an Server
+
+für Beobachter: Nur nachrichten Empfangen und darstellen
+
+
+KI:
+
+Docker Modul erstellen
+"Überspringen" KI erstellen
+KI an Characterbewegung anpassen (Sich zum Spice bewegen)
+KI Kommunikation zum Server erstellen (Config file für IP lesen?!)
+KI Spice abgeben lassen
+KI normale Aktionen implementieren
+KI Spezielle Aktionen implementieren
