@@ -1,0 +1,21 @@
+[gd_scene format=2]
+
+[node name="HouseSelection" type="Node2D"]
+
+[node name="house_1_button" type="Button" parent="."]
+margin_left = 432.0
+margin_top = 477.0
+margin_right = 579.0
+margin_bottom = 541.0
+text = "House 1"
+
+[node name="house_2_button" type="Button" parent="."]
+margin_left = 689.0
+margin_top = 476.0
+margin_right = 831.0
+margin_bottom = 538.0
+text = "House 2"
+
+[node name="house_1" type="Sprite" parent="."]
+
+[node name="house_2" type="Sprite" parent="."]

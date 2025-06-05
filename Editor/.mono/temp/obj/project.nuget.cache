@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "OIIorM1tR+t3fvaBexpoKXImgg7cyr9T53txZ5NfvjWzIbPdFTpFQB+cMc+VFedIAiuWp5f0LbzaXGk8rWRcWA==",
+  "success": true,
+  "projectFilePath": "/Users/leonardowitschauterhoff/Desktop/GitLabProjects/team18/Editor/Editor.csproj",
+  "expectedPackageFiles": [
+    "/Users/leonardowitschauterhoff/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
+    "/Users/leonardowitschauterhoff/.nuget/packages/newtonsoft.json.schema/3.0.15-beta1/newtonsoft.json.schema.3.0.15-beta1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,39 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://example.com/object1652783700.json",
+    "title": "Root",
+    "type": "object",
+    "required": [
+        "scenario"
+    ],
+    "properties": {
+        "scenario": {
+            "$id": "#root/szenario",
+            "title": "Szenario",
+            "type": "array",
+            "default": [],
+            "items":{
+                "$id": "#root/szenario/items",
+                "title": "Items",
+                "type": "array",
+                "default": [],
+                "items":{
+                    "$id": "#root/szenario/items/items",
+                    "title": "Items",
+                    "type": "string",
+                    "default": "",
+                    "enum": [
+                        "CITY",
+                        "MOUNTAINS",
+                        "PLATEAU",
+                        "DUNE",
+                        "FLAT_SAND",
+                        "HELIPORT"
+                    ]
+                }
+            }
+        }
+    }
+}
+

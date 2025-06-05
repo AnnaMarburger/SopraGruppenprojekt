@@ -1,0 +1,125 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Fonts/SAVEDBYZ.TTF" type="DynamicFontData" id=1]
+[ext_resource path="res://Scenes/StartScreen/UserInput.cs" type="Script" id=2]
+[ext_resource path="res://startscreen.mp3" type="AudioStream" id=3]
+[ext_resource path="res://Scenes/StartScreen/music.cs" type="Script" id=4]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/Gruppenbild_gross.jpg-15a77fabce1b9f68c6614743a6c57a66.stex"
+
+[sub_resource type="DynamicFontData" id=2]
+font_path = "res://Fonts/Dune_Rise.otf"
+
+[sub_resource type="DynamicFont" id=3]
+size = 60
+font_data = SubResource( 2 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 28
+font_data = ExtResource( 1 )
+
+[node name="StartScreen" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 944, 159 )
+scale = Vector2( 0.406, 0.42 )
+texture = SubResource( 1 )
+offset = Vector2( -692.118, 383.333 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 232.0
+margin_top = 72.0
+margin_right = 1060.0
+margin_bottom = 132.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "DESERTS OF DUNE"
+
+[node name="JoinGameButton" type="Button" parent="."]
+margin_left = 701.0
+margin_top = 626.0
+margin_right = 1082.0
+margin_bottom = 663.0
+custom_fonts/font = SubResource( 4 )
+text = "JOIN GAME"
+flat = true
+
+[node name="UserInput" type="WindowDialog" parent="."]
+visible = true
+margin_left = 537.0
+margin_top = 192.0
+margin_right = 941.0
+margin_bottom = 451.0
+popup_exclusive = true
+window_title = "Join as player"
+script = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="UserInput"]
+margin_left = 90.0
+margin_top = 30.0
+margin_right = 280.0
+margin_bottom = 51.0
+text = "Enter Data for your Game"
+valign = 1
+
+[node name="NicknameInput" type="LineEdit" parent="UserInput"]
+margin_left = 70.0
+margin_top = 80.0
+margin_right = 320.0
+margin_bottom = 100.0
+placeholder_text = "Nickname"
+
+[node name="IPAdressInput" type="LineEdit" parent="UserInput"]
+margin_left = 70.0
+margin_top = 130.0
+margin_right = 200.0
+margin_bottom = 154.0
+text = "127.0.0.1"
+placeholder_text = "IP-Adress"
+
+[node name="PortNoInput" type="LineEdit" parent="UserInput"]
+margin_left = 210.0
+margin_top = 130.0
+margin_right = 320.0
+margin_bottom = 150.0
+text = "10191"
+placeholder_text = "Port number"
+
+[node name="JoinAsPlayer" type="Button" parent="UserInput"]
+margin_left = 70.0
+margin_top = 180.0
+margin_right = 320.0
+margin_bottom = 200.0
+text = "Join as player"
+
+[node name="JoinAsSpectator" type="Button" parent="UserInput"]
+margin_left = 70.0
+margin_top = 210.0
+margin_right = 320.0
+margin_bottom = 20.0
+text = "Join as spectator"
+
+[node name="Messagehandler" type="Node2D" parent="UserInput"]
+position = Vector2( -537, -192 )
+
+[node name="music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+autoplay = true
+script = ExtResource( 4 )
+
+[node name="musictoggle" type="Button" parent="."]
+margin_left = 1194.0
+margin_top = 672.0
+margin_right = 1259.0
+margin_bottom = 692.0
+text = "music"
+
+[connection signal="pressed" from="JoinGameButton" to="UserInput" method="_on_JoinGameButton_pressed"]
+[connection signal="text_changed" from="UserInput/NicknameInput" to="UserInput" method="_on_NicknameInput_text_changed"]
+[connection signal="text_changed" from="UserInput/IPAdressInput" to="UserInput" method="_on_IPAdressInput_text_changed"]
+[connection signal="text_changed" from="UserInput/PortNoInput" to="UserInput" method="_on_PortNoInput_text_changed"]
+[connection signal="pressed" from="UserInput/JoinAsPlayer" to="UserInput" method="_on_JoinAsPlayer_pressed"]
+[connection signal="pressed" from="UserInput/JoinAsSpectator" to="UserInput" method="_on_JoinAsSpectator_pressed"]
+[connection signal="pressed" from="musictoggle" to="music" method="_on_musictoggle_pressed"]

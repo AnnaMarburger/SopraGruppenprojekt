@@ -1,0 +1,12 @@
+version: "3"
+services:
+  server04:
+    build: .
+    volumes:
+      - ./config.party.json:/usr/src/config.party.json
+      - ./config.scenario.json:/usr/src/config.scenario.json
+      - ./server04.jar:/usr/src/server04.jar
+    ports:
+      - "10191:10191"
+    env_file:
+      - .env.dev

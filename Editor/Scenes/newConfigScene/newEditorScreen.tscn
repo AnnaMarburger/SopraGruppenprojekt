@@ -1,0 +1,270 @@
+[gd_scene load_steps=31 format=2]
+
+[ext_resource path="res://Scenes/Tile3.cs" type="Script" id=1]
+[ext_resource path="res://Scenes/Tile1.cs" type="Script" id=2]
+[ext_resource path="res://Scenes/Tile4.cs" type="Script" id=3]
+[ext_resource path="res://Scenes/Tile2.cs" type="Script" id=4]
+[ext_resource path="res://Scenes/MainCamera.cs" type="Script" id=5]
+[ext_resource path="res://Scenes/RootNode.cs" type="Script" id=6]
+[ext_resource path="res://Scenes/Map.cs" type="Script" id=7]
+[ext_resource path="res://Scenes/anim.cs" type="Script" id=8]
+[ext_resource path="res://Assets/plateau.png" type="Texture" id=9]
+[ext_resource path="res://Scenes/Tile5.cs" type="Script" id=10]
+[ext_resource path="res://Fonts/SAVEDBYZ.ttf" type="DynamicFontData" id=11]
+[ext_resource path="res://Assets/flat_sand2.png" type="Texture" id=12]
+[ext_resource path="res://Assets/mountains2.png" type="Texture" id=13]
+[ext_resource path="res://Scenes/newConfigScene/BackButton.gd" type="Script" id=14]
+[ext_resource path="res://Assets/dune2.png" type="Texture" id=15]
+[ext_resource path="res://Assets/plateau2.png" type="Texture" id=16]
+[ext_resource path="res://Assets/arrow_back.png" type="Texture" id=17]
+[ext_resource path="res://Assets/dune.png" type="Texture" id=18]
+[ext_resource path="res://Assets/flat_sand.png" type="Texture" id=19]
+[ext_resource path="res://Assets/city.png" type="Texture" id=20]
+[ext_resource path="res://Assets/mountains.png" type="Texture" id=21]
+[ext_resource path="res://Assets/city2.png" type="Texture" id=22]
+[ext_resource path="res://Scenes/newConfigScene/selectPathDialog.cs" type="Script" id=23]
+[ext_resource path="res://Scenes/newConfigScene/saveButton.cs" type="Script" id=24]
+[ext_resource path="res://icon.png" type="Texture" id=25]
+[ext_resource path="res://Scenes/Tile6.cs" type="Script" id=26]
+
+[sub_resource type="TileSet" id=4]
+0/name = "city.png 0"
+0/texture = ExtResource( 20 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 32, 32 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "dune.png 1"
+1/texture = ExtResource( 18 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 32, 32 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "flat_sand.png 2"
+2/texture = ExtResource( 19 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 0, 32, 32 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+3/name = "mountains.png 3"
+3/texture = ExtResource( 21 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 0, 0, 32, 32 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
+3/shapes = [  ]
+3/z_index = 0
+4/name = "plateau.png 4"
+4/texture = ExtResource( 9 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 0, 0, 32, 32 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape_one_way = false
+4/shape_one_way_margin = 0.0
+4/shapes = [  ]
+4/z_index = 0
+5/name = "icon.png 5"
+5/texture = ExtResource( 25 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 32, 32, 32, 32 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape_one_way = false
+5/shape_one_way_margin = 0.0
+5/shapes = [  ]
+5/z_index = 0
+
+[sub_resource type="GDScript" id=3]
+script/source = "extends CanvasLayer
+
+
+# Declare member variables here. Examples:
+# var a = 2
+# var b = \"text\"
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+#func _process(delta):
+#	pass
+"
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 11 )
+
+[sub_resource type="StreamTexture" id=5]
+flags = 4
+load_path = "res://.import/save_button.png-34cd2949f2b291e59c00be7fcd1193be.stex"
+
+[node name="RootNode" type="Node2D"]
+script = ExtResource( 6 )
+
+[node name="MainCamera" type="Camera2D" parent="."]
+anchor_mode = 0
+script = ExtResource( 5 )
+
+[node name="anim" type="Tween" parent="MainCamera"]
+script = ExtResource( 8 )
+
+[node name="Map" type="TileMap" parent="."]
+tile_set = SubResource( 4 )
+cell_size = Vector2( 30, 30 )
+cell_custom_transform = Transform2D( 0, 0, 0, 0, 0, 0 )
+cell_tile_origin = 1
+show_collision = true
+format = 1
+script = ExtResource( 7 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = SubResource( 3 )
+
+[node name="BackButton" type="Button" parent="CanvasLayer"]
+margin_left = 32.0
+margin_top = 32.0
+margin_right = 75.0
+margin_bottom = 93.0
+rect_scale = Vector2( 0.75, 0.75 )
+custom_fonts/font = SubResource( 2 )
+icon = ExtResource( 17 )
+script = ExtResource( 14 )
+
+[node name="Tile1" type="Button" parent="CanvasLayer"]
+margin_left = 96.0
+margin_top = 32.0
+margin_right = 141.0
+margin_bottom = 77.0
+action_mode = 0
+clip_text = true
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="CanvasLayer/Tile1"]
+position = Vector2( 22.475, 22.475 )
+scale = Vector2( 0.160352, 0.160352 )
+texture = ExtResource( 12 )
+
+[node name="Tile2" type="Button" parent="CanvasLayer"]
+margin_left = 152.0
+margin_top = 32.0
+margin_right = 197.0
+margin_bottom = 77.0
+action_mode = 0
+clip_text = true
+script = ExtResource( 4 )
+
+[node name="Sprite" type="Sprite" parent="CanvasLayer/Tile2"]
+position = Vector2( 22.5143, 22.792 )
+scale = Vector2( 0.160045, 0.162437 )
+texture = ExtResource( 15 )
+
+[node name="Tile3" type="Button" parent="CanvasLayer"]
+margin_left = 208.0
+margin_top = 32.0
+margin_right = 253.0
+margin_bottom = 77.0
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="CanvasLayer/Tile3"]
+position = Vector2( 22.425, 22.425 )
+scale = Vector2( 0.160742, 0.160742 )
+texture = ExtResource( 13 )
+
+[node name="Tile4" type="Button" parent="CanvasLayer"]
+margin_left = 264.0
+margin_top = 32.0
+margin_right = 309.0
+margin_bottom = 77.0
+script = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="CanvasLayer/Tile4"]
+position = Vector2( 22.2832, 22.2113 )
+scale = Vector2( 0.16185, 0.162412 )
+texture = ExtResource( 16 )
+
+[node name="Tile5" type="Button" parent="CanvasLayer"]
+margin_left = 320.0
+margin_top = 32.0
+margin_right = 365.0
+margin_bottom = 77.0
+script = ExtResource( 10 )
+
+[node name="Sprite" type="Sprite" parent="CanvasLayer/Tile5"]
+position = Vector2( 22.5, 22.5 )
+scale = Vector2( 0.160156, 0.160156 )
+texture = ExtResource( 22 )
+
+[node name="saveButton" type="TextureButton" parent="CanvasLayer"]
+margin_left = 33.0
+margin_top = 99.0
+margin_right = 73.0
+margin_bottom = 139.0
+texture_normal = SubResource( 5 )
+expand = true
+script = ExtResource( 24 )
+
+[node name="selectPathDialog" type="FileDialog" parent="CanvasLayer"]
+margin_left = 330.0
+margin_top = 198.0
+margin_right = 968.0
+margin_bottom = 472.0
+rect_min_size = Vector2( 400, 140 )
+window_title = "Datei speichern"
+script = ExtResource( 23 )
+
+[node name="Tile6" type="Button" parent="CanvasLayer"]
+margin_left = 379.0
+margin_top = 32.0
+margin_right = 424.0
+margin_bottom = 77.0
+script = ExtResource( 26 )
+
+[node name="Icon" type="Sprite" parent="CanvasLayer/Tile6"]
+position = Vector2( 23, 24 )
+scale = Vector2( 0.617188, 0.640625 )
+texture = ExtResource( 25 )
+
+[connection signal="pressed" from="CanvasLayer/BackButton" to="CanvasLayer/BackButton" method="_on_BackButton_pressed"]
+[connection signal="pressed" from="CanvasLayer/saveButton" to="CanvasLayer/selectPathDialog" method="_on_saveButton_pressed"]
+[connection signal="file_selected" from="CanvasLayer/selectPathDialog" to="CanvasLayer/saveButton" method="_on_selectPathDialog_file_selected"]

@@ -1,0 +1,474 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://example.com/object1652780802.json",
+	"title": "Root",
+	"type": "object",
+	"required": [
+		"noble",
+		"mentat",
+		"beneGesserit",
+		"fighter",
+		"numbOfRounds",
+		"actionTimeUserClient",
+		"actionTimeAiClient",
+		"highGroundBonusRatio",
+		"lowerGroundMalusRatio",
+		"kanlySuccessProbability",
+		"spiceMinimum",
+		"cellularAutomaton",
+		"sandWormSpeed",
+		"sandWormSpawnDistance",
+		"cloneProbability",
+		"minPauseTime"
+	],
+	"properties": {
+		"noble": {
+			"$id": "#root/noble",
+			"title": "Noble",
+			"type": "object",
+			"required": [
+				"maxHP",
+				"maxMP",
+				"maxAP",
+				"damage",
+				"inventorySize",
+				"healingHP"
+			],
+			"properties": {
+				"maxHP": {
+					"$id": "#root/noble/maxHP",
+					"title": "Maxhp",
+					"type": "number",
+					"examples": [
+						20
+					],
+					"default": 0,
+					"minimum": 0
+				},
+				"maxMP": {
+					"$id": "#root/noble/maxMP",
+					"title": "Maxmp",
+					"type": "integer",
+					"examples": [
+						21
+					],
+					"default": 0,
+					"minimum": 0
+				},
+				"maxAP": {
+					"$id": "#root/noble/maxAP",
+					"title": "Maxap",
+					"type": "integer",
+					"examples": [
+						22
+					],
+					"default": 0,
+					"minimum": 0
+				},
+				"damage": {
+					"$id": "#root/noble/damage",
+					"title": "Damage",
+					"type": "number",
+					"examples": [
+						4
+					],
+					"default": 0,
+					"minimum": 0
+				},
+				"inventorySize": {
+					"$id": "#root/noble/inventorySize",
+					"title": "Inventorysize",
+					"type": "integer",
+					"examples": [
+						8
+					],
+					"default": 0,
+					"minimum": 0
+				},
+				"healingHP": {
+					"$id": "#root/noble/healingHP",
+					"title": "Healinghp",
+					"type": "number",
+					"examples": [
+						6
+					],
+					"default": 0,
+					"minimum": 0
+				}
+			}
+		}
+	,
+		"mentat": {
+			"$id": "#root/mentat",
+			"title": "Mentat",
+			"type": "object",
+			"required": [
+				"maxHP",
+				"maxMP",
+				"maxAP",
+				"damage",
+				"inventorySize",
+				"healingHP"
+			],
+			"properties": {
+				"maxHP": {
+					"$id": "#root/noble/maxHP",
+					"title": "Maxhp",
+					"type": "number",
+					"examples": [
+						20
+					],
+					"default": 0,
+					"minimum": 0
+				},
+				"maxMP": {
+					"$id": "#root/noble/maxMP",
+					"title": "Maxmp",
+					"type": "integer",
+					"examples": [
+						21
+					],
+					"default": 0,
+					"minimum": 0
+				},
+				"maxAP": {
+					"$id": "#root/noble/maxAP",
+					"title": "Maxap",
+					"type": "integer",
+					"examples": [
+						22
+					],
+					"default": 0,
+					"minimum": 0
+				},
+				"damage": {
+					"$id": "#root/noble/damage",
+					"title": "Damage",
+					"type": "number",
+					"examples": [
+						4
+					],
+					"default": 0,
+					"minimum": 0
+				},
+				"inventorySize": {
+					"$id": "#root/noble/inventorySize",
+					"title": "Inventorysize",
+					"type": "integer",
+					"examples": [
+						8
+					],
+					"default": 0,
+					"minimum": 0
+				},
+				"healingHP": {
+					"$id": "#root/noble/healingHP",
+					"title": "Healinghp",
+					"type": "number",
+					"examples": [
+						6
+					],
+					"default": 0,
+					"minimum": 0
+				}
+			}
+		}
+	,
+		"beneGesserit": {
+			"$id": "#root/beneGesserit",
+			"title": "Benegesserit",
+			"type": "object",
+			"required": [
+				"maxHP",
+				"maxMP",
+				"maxAP",
+				"damage",
+				"inventorySize",
+				"healingHP"
+			],
+			"properties": {
+				"maxHP": {
+					"$id": "#root/noble/maxHP",
+					"title": "Maxhp",
+					"type": "number",
+					"examples": [
+						20
+					],
+					"default": 0,
+					"minimum": 0
+				},
+				"maxMP": {
+					"$id": "#root/noble/maxMP",
+					"title": "Maxmp",
+					"type": "integer",
+					"examples": [
+						21
+					],
+					"default": 0,
+					"minimum": 0
+				},
+				"maxAP": {
+					"$id": "#root/noble/maxAP",
+					"title": "Maxap",
+					"type": "integer",
+					"examples": [
+						22
+					],
+					"default": 0,
+					"minimum": 0
+				},
+				"damage": {
+					"$id": "#root/noble/damage",
+					"title": "Damage",
+					"type": "number",
+					"examples": [
+						4
+					],
+					"default": 0,
+					"minimum": 0
+				},
+				"inventorySize": {
+					"$id": "#root/noble/inventorySize",
+					"title": "Inventorysize",
+					"type": "integer",
+					"examples": [
+						8
+					],
+					"default": 0,
+					"minimum": 0
+				},
+				"healingHP": {
+					"$id": "#root/noble/healingHP",
+					"title": "Healinghp",
+					"type": "number",
+					"examples": [
+						6
+					],
+					"default": 0,
+					"minimum": 0
+				}
+			}
+		}
+	,
+		"fighter": {
+			"$id": "#root/fighter",
+			"title": "Fighter",
+			"type": "object",
+			"required": [
+				"maxHP",
+				"maxMP",
+				"maxAP",
+				"damage",
+				"inventorySize",
+				"healingHP"
+			],
+			"properties": {
+				"maxHP": {
+					"$id": "#root/noble/maxHP",
+					"title": "Maxhp",
+					"type": "number",
+					"examples": [
+						20
+					],
+					"default": 0,
+					"minimum": 0
+				},
+				"maxMP": {
+					"$id": "#root/noble/maxMP",
+					"title": "Maxmp",
+					"type": "integer",
+					"examples": [
+						21
+					],
+					"default": 0,
+					"minimum": 0
+				},
+				"maxAP": {
+					"$id": "#root/noble/maxAP",
+					"title": "Maxap",
+					"type": "integer",
+					"examples": [
+						22
+					],
+					"default": 0,
+					"minimum": 0
+				},
+				"damage": {
+					"$id": "#root/noble/damage",
+					"title": "Damage",
+					"type": "number",
+					"examples": [
+						4
+					],
+					"default": 0,
+					"minimum": 0
+				},
+				"inventorySize": {
+					"$id": "#root/noble/inventorySize",
+					"title": "Inventorysize",
+					"type": "integer",
+					"examples": [
+						8
+					],
+					"default": 0,
+					"minimum": 0
+				},
+				"healingHP": {
+					"$id": "#root/noble/healingHP",
+					"title": "Healinghp",
+					"type": "number",
+					"examples": [
+						6
+					],
+					"default": 0,
+					"minimum": 0
+				}
+			}
+		}
+	,
+		"numbOfRounds": {
+			"$id": "#root/numbOfRounds",
+			"title": "Numbofrounds",
+			"type": "integer",
+			"examples": [
+				10
+			],
+			"minimum": 1,
+			"default": 1
+		},
+		"actionTimeUserClient": {
+			"$id": "#root/actionTimeUserClient",
+			"title": "ActiontimeUserClient",
+			"type": "number",
+			"examples": [
+				0.5
+			],
+			"minimum": 0,
+			"default": 0.0
+		},
+		"maxStrikes": {
+			"$id": "#root/maxStrikes",
+			"title": "maxStrikes",
+			"type": "integer",
+			"examples": [
+				1
+			],
+			"minimum": 0,
+			"default":0
+		},
+		"actionTimeAiClient": {
+			"$id": "#root/actionTimeAiClient",
+			"title": "ActiontimeAiClient",
+			"type": "number",
+			"examples": [
+				0.5
+			],
+			"minimum": 0,
+			"default": 0.0
+		},
+		"highGroundBonusRatio": {
+			"$id": "#root/highGroundBonusRatio",
+			"title": "Highgroundbonusratio",
+			"type": "number",
+			"examples": [
+				0.5
+			],
+			"default": 0.0,
+			"minimum": 0
+			
+		},
+		"lowerGroundMalusRatio": {
+			"$id": "#root/lowerGroundMalusRatio",
+			"title": "Lowergroundmalusratio",
+			"type": "number",
+			"examples": [
+				0.5
+			],
+			"default": 0.0,
+			"minimum": 0
+			
+		},
+		"kanlySuccessProbability": {
+			"$id": "#root/kanlySuccessProbability",
+			"title": "Kanlysuccessprobability",
+			"type": "number",
+			"examples": [
+				0.5
+			],
+			"default": 0.0,
+			"minimum": 0,
+			"maximum": 1
+		},
+		"spiceMinimum": {
+			"$id": "#root/spiceMinimum",
+			"title": "Spiceminimum",
+			"type": "integer",
+			"examples": [
+				10
+			],
+			"minimum": 0,
+			"default": 0
+		},
+		"cellularAutomaton": {
+			"$id": "#root/cellularAutomaton",
+			"title": "Cellularautomaton",
+			"type": "string",
+			"default": "",
+			"examples": [
+				"S2/B3"
+			],
+			"pattern": "^.*$"
+		},
+		"sandWormSpeed": {
+			"$id": "#root/sandWormSpeed",
+			"title": "Sandwormspeed",
+			"type": "integer",
+			"examples": [
+				10
+			],
+			"minimum": 0,
+			"default": 0
+		},
+		"sandWormSpawnDistance": {
+			"$id": "#root/sandWormSpawnDistance",
+			"title": "Sandwormspawndistance",
+			"type": "integer",
+			"examples": [
+				10
+			],
+			"minimum": 0,
+			"default": 0
+		},
+		"cloneProbability": {
+			"$id": "#root/cloneProbability",
+			"title": "Cloneprobability",
+			"type": "number",
+			"examples": [
+				0.5
+			],
+			"default": 0.0,
+			"minimum": 0,
+			"maximum": 1
+		},
+		"minPauseTime": {
+			"$id": "#root/minPauseTime",
+			"title": "Minpausetime",
+			"type": "integer",
+			"examples": [
+				10
+			],
+			"default": 0,
+			"minimum": 0
+		},
+		"crashProbability": {
+			"$id": "#root/crashProbability",
+			"title": "Crashprobability",
+			"type": "number",
+			"default": 0.0,
+			"minimum": 0,
+			"maximum": 1
+		}
+	}
+}
+

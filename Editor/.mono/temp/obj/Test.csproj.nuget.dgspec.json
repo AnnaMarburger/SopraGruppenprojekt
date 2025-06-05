@@ -1,0 +1,53 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/leonardowitschauterhoff/Desktop/Gruppenabgabe/team18/Test/Test.csproj": {}
+  },
+  "projects": {
+    "/Users/leonardowitschauterhoff/Desktop/Gruppenabgabe/team18/Test/Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/leonardowitschauterhoff/Desktop/Gruppenabgabe/team18/Test/Test.csproj",
+        "projectName": "Test",
+        "projectPath": "/Users/leonardowitschauterhoff/Desktop/Gruppenabgabe/team18/Test/Test.csproj",
+        "packagesPath": "/Users/leonardowitschauterhoff/.nuget/packages/",
+        "outputPath": "/Users/leonardowitschauterhoff/Desktop/Gruppenabgabe/team18/Test/.mono/temp/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/leonardowitschauterhoff/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Newtonsoft.Json.Schema": {
+              "target": "Package",
+              "version": "[3.0.15-beta1, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Library/Frameworks/Mono.framework/Versions/6.12.0/lib/mono/msbuild/Current/bin/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
